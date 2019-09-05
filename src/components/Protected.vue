@@ -8,15 +8,16 @@
     name: "Protected",
     beforeRouteEnter: (to, from, next) => {
       next(vm => {
+        console.log(vm.$store.state.user.user);
         if (vm.$store.state.user.user) {
           return next();
         } else {
           swal({
-            title: "Error!",
+            title: "Shit looking real broken to me!",
             text: "Please log in or sign up!",
             type: "error",
-            allowOutsideClick: false,
-            confirmButtonText: "All Right"
+            allowOutsideClick: true,
+            confirmButtonText: "Well damn okay"
           });
           return next({ name: "Home" });
         }
