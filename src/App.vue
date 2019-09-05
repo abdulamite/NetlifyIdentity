@@ -47,7 +47,7 @@ import netlifyIdentity from "netlify-identity-widget";
 import { mapGetters, mapActions } from "vuex";
 
 netlifyIdentity.init({
-  APIUrl: "https://sad-perlman-1a6469.netlify.com/.netlify/identity",
+  APIUrl: "https://naughty-curran-3fcd03.netlify.com/.netlify/identity",
   logo: true // you can try false and see what happens
 });
 
